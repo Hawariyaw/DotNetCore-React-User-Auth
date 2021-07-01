@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GenerateProgramFile>false</GenerateProgramFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="2.0.0"/>
+    <PackageReference Include="MongoDB.Driver" Version="2.12.4"/>
+    <PackageReference Include="SendGrid" Version="9.24.0"/>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.4"/>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.10.0"/>
+    <PackageReference Include="xunit" Version="2.4.1"/>
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3"/>
+    <PackageReference Include="Moq" Version="4.16.1"/>
+  </ItemGroup>
+</Project>
