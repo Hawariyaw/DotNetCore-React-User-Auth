@@ -9,14 +9,12 @@ using System.Collections.Generic;
 
 public class LoginControllerTest
 {
-    private readonly ILogger<LoginController> _logger;
     private readonly LoginController _controller;
     private readonly Mock<IUserService> mock;
-    public LoginControllerTest(ILogger<LoginController> logger)
+    public LoginControllerTest()
     {
-        _logger = logger;
         mock = new Mock<IUserService>();
-        _controller = new LoginController(_logger, mock.Object);
+        _controller = new LoginController(mock.Object);
     }
 
     [Fact]
@@ -25,10 +23,10 @@ public class LoginControllerTest
         // Act
         Login credential = new Login()
         {
-            UserName = "hewipoul@gmail.com",
-            Password = "hewi"
+            UserName = "elias@gmail.com",
+            Password = "ela"
         };
-        var okResult = _controller.Login(credential);
+        var okResult = this._controller.Login(credential);
         // Assert
         Assert.IsType<OkObjectResult>(okResult);
     }

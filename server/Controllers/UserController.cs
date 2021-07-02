@@ -40,7 +40,7 @@ namespace server.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                return BadRequest(new { message = ex.Message });
             }
         }
 
@@ -59,11 +59,11 @@ namespace server.Controllers
 
                     return Ok(newUser);
                 }
-                return BadRequest("Invalid Model Accepted.");
+                return BadRequest(new { message = "Invalid Model Accepted" });
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                return BadRequest(new { message = ex.Message });
             }
         }
 
@@ -79,11 +79,11 @@ namespace server.Controllers
                     _userService.Update(user);
                     return Ok(user);
                 }
-                return BadRequest("Invalid Model Accepted");
+                return BadRequest(new { message = "Invalid Model Accepted" });
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                return BadRequest(new { message = ex.Message });
             }
         }
 
@@ -93,11 +93,11 @@ namespace server.Controllers
             try
             {
                 _userService.Delete(id);
-                return Ok(id);
+                return Ok(new { id = id });
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                return BadRequest(new { message = ex.Message });
             }
         }
     }

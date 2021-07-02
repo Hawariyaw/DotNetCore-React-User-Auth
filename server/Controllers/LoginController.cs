@@ -21,9 +21,8 @@ namespace server.Controllers
 
         private readonly IUserService _userService;
 
-        public LoginController(ILogger<LoginController> logger, IUserService userService)
+        public LoginController(IUserService userService)
         {
-            _logger = logger;
             _userService = userService;
         }
 
