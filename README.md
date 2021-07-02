@@ -23,3 +23,9 @@ User must aquire SendGrid Api to make the application send email on registration
         "SendGridKey": "SEND GRID API KEY"
     }
  ```
+ 
+ ScreenShoots
+  ![Alt Text](https://github.com/Hawariyaw/DotNetCore-React-User-Auth/blob/main/zScreenShoots/ReactCore1.JPG)
+  ![Alt Text](https://github.com/Hawariyaw/DotNetCore-React-User-Auth/blob/main/zScreenShoots/ReactCore2.JPG)
+  ![Alt Text](https://github.com/Hawariyaw/DotNetCore-React-User-Auth/blob/main/zScreenShoots/ReactCore4.JPG)
+
