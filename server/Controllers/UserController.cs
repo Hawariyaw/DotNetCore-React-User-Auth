@@ -31,7 +31,6 @@ namespace server.Controllers
             _emailSender = emailSender;
         }
 
-        [AllowAnonymous]
         [HttpGet]
         public ActionResult<List<User>> GetAll()
         {
@@ -68,7 +67,6 @@ namespace server.Controllers
             }
         }
 
-        [AllowAnonymous]
         [HttpPut]
         public ActionResult Update(User user)
         {
@@ -89,7 +87,6 @@ namespace server.Controllers
             }
         }
 
-        [AllowAnonymous]
         [HttpDelete("{id}")]
         public ActionResult Delete(string id)
         {
